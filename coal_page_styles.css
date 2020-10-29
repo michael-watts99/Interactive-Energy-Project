@@ -1,0 +1,162 @@
+body{
+    background-color: #CC2316;
+    overflow: hidden;
+}
+.main_div{
+    width: 100%;
+    height: 100%;
+}
+.coal_info_div{
+    position: relative;
+    width: 33.5%;
+    height: fit-content;
+    bottom: 70px;
+    left: 6.65%;
+}
+
+
+.coal_info_img{
+    position: relative;
+    height: auto;
+    width: 120%;
+}
+.envir_button{
+    position: absolute;
+    width: fit-content;
+    left: 65%;
+
+    top: 22%;
+}
+.envir_button_img{
+    width: 90%;
+    height: auto;
+}
+.future_button_div{
+    position: absolute;
+    width: fit-content;
+    left: 79%;
+    top: 46%;
+}
+.future_button{
+    width: 90%;
+    height: auto;
+}
+.cost_button_div{
+    position: absolute;
+    width: fit-content;
+    left: 99%;
+
+    top: 70%;
+}
+.cost_button{
+    width: 90%;
+    height: auto;
+}
+.envir_information_div{
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    right: 1%;
+    top: 1%; 
+    height: 98%;
+    
+}
+.future_info_div, .cost_info_div{
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    right: 1%;
+    top: 1%; 
+    height: 98%;
+    display: none;
+}
+
+h1{
+    
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: 35px;
+}
+p{
+    text-align: left;
+    font-size: 62.85%;
+    font-family: "Cooper Black";
+    padding-left: 2px;
+}
+h2{
+    font-family: "Cooper Black";
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.final_para{
+    margin-bottom: 5px;
+}
+.solution_heading{
+    margin-top: 5px;
+}
+
+.solar_img{
+    position: relative;
+    height: auto;
+    width: 22%;
+    left: 39%;
+    bottom: 27px;
+
+}
+.home_img{
+    height: auto;
+    width: 5%;
+}
+/* ADDED A DIV FOR THE ENTIRE PAGE TO HAVE SOMETHING TO ANCHOR EVERYTHING ON SO THAT WHEN THE PAGE IS OPENED ON ANOTHER DISPLAY IT IS STILL VIEWABLE */
+@media only screen and (max-width: 1500px){
+    h1{
+        font-size: 30px;
+        
+    }
+}
+@media only screen and (max-width: 1380px){
+    h1{
+        font-size: 27px;
+        
+    }
+}
+ @media only screen and (max-width: 1190px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 80%;
+    
+    }
+    h1{
+        font-size: 25px;
+        
+    }
+}
+@media only screen and (max-width: 1080px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 70%;
+    
+    }
+}
+@media only screen and (max-width: 920px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 60%;
+    
+    }
+}
+
+@-moz-document url-prefix()
+{
+    .envir_button, .future_button_div, .cost_button_div{
+        width: max-content;
+    }
+}
+@supports (-ms-ime-align: auto) {
+    .envir_button, .future_button_div, .cost_button_div{
+        display: table;
+    }
+}
+@media (-ms-high-contrast: none) {
+    .envir_button, .future_button_div, .cost_button_div{
+        display: table;
+    }
+}

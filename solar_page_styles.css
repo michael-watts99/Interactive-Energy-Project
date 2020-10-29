@@ -1,0 +1,161 @@
+body{
+    background-color: #2B823A;
+    overflow: hidden;
+}
+
+.main_div{
+    width: 100%;
+    height: 100%;
+}
+.solar_info_div{
+    position: relative;
+    padding-top: 80px;
+    width: 33%;
+    height: fit-content;
+    bottom: 50px;
+    left: 6%;
+}
+.solar_info_img{
+    position: relative;
+    height: auto;
+    width: 110%;
+}
+
+.envir_button{
+    position: absolute;
+    width: fit-content;
+    left: 90%;
+    top: 5%;
+}
+.envir_button_img{
+    width: 90%;
+    height: auto;
+}
+.future_button_div{
+    position: absolute;
+    width: fit-content;
+    left: 110%;
+    top: 42%;
+}
+.future_button{
+    width: 90%;
+    height: auto;
+}
+.cost_button_div{
+    position: absolute;
+    width: fit-content;
+    left: 95%;
+    top: 80%;
+}
+.cost_button{
+    width: 90%;
+    height: auto;
+}
+.envir_information_div{
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    right: 1%;
+    top: 1%;
+    height: 98%;
+    
+    
+}
+.future_info_div, .cost_info_div{
+    background-color: white;
+    position: absolute;
+    width: 45%;
+    right: 1%;
+    top: 1%;
+    height: 98%;
+    display: none;
+}
+
+h1{
+    
+    text-align: center;
+    font-family: "Cooper Black";
+    font-size: 35px;
+    margin-bottom: 3px;
+}
+p{
+    text-align: left;
+    font-size: 62.85%;
+    font-family: "Cooper Black";
+    padding-left: 2px;
+}
+h2{
+    font-family: "Cooper Black";
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.coal_img{
+    position: relative;
+    height: auto;
+    width: 50%;
+    left: 25%;
+    bottom: 27px;
+
+}
+.final_para{
+    margin-bottom: 3px;
+}
+.solution_heading{
+    margin-top: 3px;
+}
+.home_img{
+    height: auto;
+    width: 5%;
+}
+/* Setting CSS based on the screen size */
+@media only screen and (max-width: 1500px){
+    h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1380px){
+    h1{
+        font-size: 27px;
+    }
+}
+ @media only screen and (max-width: 1190px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 80%;
+    
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 70%;
+    
+    }
+}
+@media only screen and (max-width: 920px){
+    .envir_button_img, .future_button, .cost_button{
+        width: 60%;
+    
+    }
+}
+/* Setting CSS based on the browser */
+@-moz-document url-prefix()
+{
+    .envir_button, .future_button_div, .cost_button_div{
+        width: max-content;
+    }
+}
+/* Checks for Edge */
+@supports (-ms-ime-align: auto) {
+    .envir_button, .future_button_div, .cost_button_div{
+        display: table;
+    }
+}
+/* Checks for IE */
+@media (-ms-high-contrast: none) {
+    .envir_button, .future_button_div, .cost_button_div{
+        display: table;
+    }
+}
